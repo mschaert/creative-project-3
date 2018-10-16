@@ -1,10 +1,47 @@
 <!DOCTYPE <!DOCTYPE html>
-<!-- http://18.223.187.46/creative-assignment-3/ -->
+<!-- http://18.223.187.46/creative-project-3/ -->
 <html>
-	<head>
-		<title>Creative Project 3</title>
-	</head>
-	<body>
 
-	</body>
+<head>
+	<title>Creative Project 3</title>
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+	<script src="app.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl" ng-style="bodyStyle">
+	<div class="jumbotron" ng-style="headerStyle">
+		<h1 ng-style="headerTextStyle">Styling with Angular</h1>
+	</div>
+
+	<div id="form" ng-style="formStyle">
+		<form ng-submit="stylePage()">
+			<div>
+				<input type="submit" value="Style Page">
+			</div>
+
+			<div class="styleForm">
+				<h2>Header</h2>
+				<input type="text" ng-model="hBgColor" placeholder="Background color"><br />
+				<input type="text" ng-model="hTextColor" placeholder="Text color"><br />
+				<input type="text" ng-model="hFontSize" placeholder="Font size"><br />
+				<input type="text" ng-model="hPadding" placeholder="Padding"><br />
+				<input type="text" ng-model="hMargin" placeholder="Margin"><br />
+			</div>
+
+			<div class="styleForm">
+				<h2>Body</h2>
+				<input type="text" ng-model="bgColor" placeholder="Background color"><br />
+				<input type="text" ng-model="textColor" placeholder="Text color"><br />
+				<input type="text" ng-model="fontSize" placeholder="Font size"><br />
+				<input type="text" ng-model="padding" placeholder="Padding"><br />
+				<input type="text" ng-model="margin" placeholder="Margin"><br />
+			</div>
+		</form>
+	</div>
+</body>
+
 </html>
