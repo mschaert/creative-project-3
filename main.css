@@ -3,5 +3,26 @@
 }
 
 #form {
-    padding: 20;
+    padding: 20px;
+}
+input{
+    width: 180px;
+    margin-bottom: 5px;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+    background-color: lightgray;
+
+}
+.stylebutton{
+    width: 100px;
+}
+.imageForm {
+    display: inline-block;
+    justify-content: center;
+    width: 600px;
+    height: 400px;
+    left: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

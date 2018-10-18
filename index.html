@@ -20,9 +20,8 @@
 	<div id="form" ng-style="formStyle">
 		<form ng-submit="stylePage()">
 			<div>
-				<input type="submit" value="Style Page">
+				<input type="submit" value="Style Page" class="stylebutton">
 			</div>
-
 			<div class="styleForm">
 				<h2>Header</h2>
 				<input type="text" ng-model="hBgColor" placeholder="Background color"><br />
@@ -31,7 +30,6 @@
 				<input type="text" ng-model="hPadding" placeholder="Padding"><br />
 				<input type="text" ng-model="hMargin" placeholder="Margin"><br />
 			</div>
-
 			<div class="styleForm">
 				<h2>Body</h2>
 				<input type="text" ng-model="bgColor" placeholder="Background color"><br />
@@ -40,7 +38,19 @@
 				<input type="text" ng-model="padding" placeholder="Padding"><br />
 				<input type="text" ng-model="margin" placeholder="Margin"><br />
 			</div>
+			<div class="styleForm">
+				<h2>Images</h2>
+				<input type="text" ng-model="imgUrl" placeholder="Image URL"><br />
+              	<input type="text" ng-model="borderpx" placeholder="1-10 px"><br />
+              	<input type="text" ng-model="borderstyle" placeholder="Outset, Double, or Solid"><br />
+              	<input type="text" ng-model="bordercolor" placeholder="Color of Border"><br />
+              	<input type="text" ng-model="imgfilter" placeholder="Inverted: 0-100?"><br />
+
+			</div>
 		</form>
+		<div class="imageForm" ng-style="ImageStyle">
+				<p ng-style="imageText">Image Placement</p>
+		</div>
 	</div>
 </body>
 

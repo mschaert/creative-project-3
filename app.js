@@ -1,3 +1,4 @@
+/* global angular */
 var app = angular.module('myApp', []); 
 app.controller('myCtrl', function($scope) {
     
@@ -19,6 +20,16 @@ app.controller('myCtrl', function($scope) {
             "font-size": $scope.fontSize,
             "padding": $scope.padding,
             "margin": $scope.margin
+        }
+        $scope.ImageStyle = {
+            "background-image": "url('" + $scope.imgUrl + "')",
+            "border-width":  $scope.borderpx,
+            "border-style": $scope.borderstyle,
+            "border-color": $scope.bordercolor,
+            "filter": "invert(" + $scope.imgfilter + "%)"
+        }
+        $scope.imageText = {
+            "opacity": 0
         }
     }
 });
